@@ -1,0 +1,9 @@
+FROM golang:latest AS build-stage
+
+WORKDIR /go_project
+
+COPY . ./
+
+EXPOSE 8080
+
+CMD ["tail", "-f", "/dev/null"]
