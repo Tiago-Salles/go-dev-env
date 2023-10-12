@@ -1,9 +1,0 @@
-FROM golang:latest AS build-stage
-
-WORKDIR /go_project
-
-COPY app_resources ./
-
-EXPOSE 8080
-
-CMD ["tail", "-f", "/dev/null"]

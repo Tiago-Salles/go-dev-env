@@ -15,3 +15,8 @@ reset-env:
 	$(DOCKER_PRUNE)
 	$(BUILD_ENV)
 	$(RUN_ENV)
+
+.PHONY: start-env
+start-env:
+	$(BUILD_ENV)
+	$(RUN_ENV)
