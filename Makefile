@@ -1,5 +1,5 @@
 BUILD_ENV = docker build -t go-env:dev -f docker/Dockerfile .
-RUN_ENV = docker run -it go-env:dev /bin/sh
+RUN_ENV = docker run -it go-env:dev /bin/bash
 
 .PHONY: build-env
 build-env:
